@@ -1,0 +1,45 @@
+{
+    "name": "@universal-error-boundary/react",
+    "version": "1.0.0",
+    "description": "A themeable, fully explainable React error boundary (light/dark/pink/red/blue themes, custom themes, custom error reporting). Works from TypeScript and plain JavaScript.",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "build": "tsup",
+        "dev": "tsup --watch",
+        "typecheck": "tsc --noEmit",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [
+        "error-boundary",
+        "react",
+        "fallback-ui",
+        "themes"
+    ],
+    "peerDependencies": {
+        "react": ">=16.8.0"
+    },
+    "dependencies": {
+        "@universal-error-boundary/core": "1.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.12",
+        "react": "^18.3.1",
+        "tsup": "^8.3.5",
+        "typescript": "^5.6.3"
+    }
+}
